@@ -69,7 +69,7 @@ def gross_per_studio(collection)
   column_index = 0 
   while column_index < collection.length do 
 movies_info = collection[column_index]
-if !new_hash[movies_info[:studio]] # <- if studio doesn't exist in this hash at the moment in the loop, then add the studio and put it's worldwide gross amount that you have from another source.
+if !new_hash[movies_info[:studio]] # <- if studio doesn't exist in this hash at the moment in the loop, then add the studio and put its worldwide gross amount that you have from another source.
   new_hash[movies_info[:studio]] = movies_info[:worldwide_gross]
 else 
 new_hash[movies_info[:studio]] += movies_info[:worldwide_gross] #^if does exist in this new hash, then we increase the worldwide gross 
